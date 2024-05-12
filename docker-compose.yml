@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ruby:
+    build: .
+    tty: true
+    ports:
+      - "3221:3000"
+    volumes:
+      - .:/app
